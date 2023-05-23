@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color scheme generator</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:ital,wght@0,200;0,300;0,400;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <nav>
+        <input id="color-input" type="color" />
+        
+        <label> 
+            <select id="color-mode">
+                <option value="monochrome">Monochrome</option>
+                <option value="monochrome-dark">Monochrome-dark</option>
+                <option value="monochrome-light">Monochrome-light</option>
+                <option value="analogic">Analogic</option>
+                <option value="complement">Complement</option>
+                <option value="analogic-complement">Analogic-complement</option>
+                <option value="triad">Triad</option>
+            </select>
+        </label>
+        
+        <button id="get-color-schemes">Get coolor schemes</button>
+        </nav>
+        <div id="schemes"></div>
+        <footer id="footer">
+            <h4>color 1</h4>
+            <h4>color 2</h4>
+            <h4>color 3</h4>
+            <h4>color 4</h4>
+            <h4>color 5</h4>
+        </footer>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
