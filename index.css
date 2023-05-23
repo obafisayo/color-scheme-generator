@@ -1,4 +1,4 @@
-html, body {
+body {
     background: #DFDFDF;
     margin: 0;
     padding: 0;
@@ -11,7 +11,8 @@ html, body {
 }
 #container{
     width: 550px;
-    height: 550px;
+    min-height: 550px;
+    max-height: fit-content;
     background-color: #374962;
     display: flex;
     flex-direction: column;
@@ -22,7 +23,8 @@ nav{
     justify-content: center;
     align-items: center;
     width: 550px;
-    height: 90px;
+    min-height: 90px;
+    max-height: fit-content;
     background-color: #1F2937;
     column-gap: 10px;
 }
@@ -63,9 +65,42 @@ nav{
     height: 414px;
 }
 footer{
-    height: 46px;
+    height: 70px;
     background-color: #486184;
-    display: flex;
-    justify-content: space-around;
-    color: white
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    place-content: center;
+    gap: 10px;
+    color: white;
+    padding: 10px;
+}
+@media screen and (max-width: 400px){
+    ::-webkit-scrollbar{
+        display: none;
+    }
+    #container{
+        width: 100%;
+        height: 100vw;
+    }
+    nav{
+        width: 100%;
+    }
+    #get-color-schemes{
+        width: 40%;
+        margin-right: 10px;
+    }
+    #color-input{
+        width: 20%;
+        margin-left: 10px;
+    }
+    #color-mode{
+        width: 100%;
+    }
+    #Color{
+        width: 20%;
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
